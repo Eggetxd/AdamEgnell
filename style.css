@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+}
+
+header {
+    background-color: rgb(144, 144, 255);
+    padding: 10px 5vw;
+    padding-bottom: 0;
+}
+
+
+header nav{
+    display: flex;
+    align-content: flex-start;
+    margin-top: 10px;
+}
+
+header nav button {
+    background-color: rgb(159, 159, 255);
+    padding: 0.5rem 1.5rem;
+    border-width: 2px;
+    border-color: rgb(144, 144, 226);
+    border-style:solid;
+}
+
+header nav button:hover {
+    background-color: rgb(129, 129, 238);
+    border-color: rgb(129, 129, 238);
+    border-bottom-color: white;
+    border-top-color: rgb(122, 122, 224);
+}
