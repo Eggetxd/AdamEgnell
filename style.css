@@ -2,6 +2,25 @@
     margin: 0;
 }
 
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    margin-top: 40px;
+    color: rgb(60, 60, 255);
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+p {
+    margin-top: 5px;
+}
+
 header {
     background-color: rgb(144, 144, 255);
     padding: 10px 5vw;
@@ -28,4 +47,27 @@ header nav button:hover {
     border-color: rgb(129, 129, 238);
     border-bottom-color: white;
     border-top-color: rgb(122, 122, 224);
+}
+
+main {
+    padding: 50px 10vw;
+}
+
+
+.column {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.left {
+    width: 60%;
+}
+
+.right {
+    margin-left: 5vw;
+    width:40%;
+}
+
+.right img {
+    width: minmax(80%, 10vw);
 }
