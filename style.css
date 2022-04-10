@@ -71,3 +71,16 @@ main {
 .right img {
     width: minmax(80%, 10vw);
 }
+
+.betyg-column {
+    display:flex;
+    justify-content: flex-start;
+    width:100%;
+}
+
+.betyg-column p:last-of-type {
+    width:100%;
+    color: red;
+    display: flex;
+    justify-content: flex-end;
+}
