@@ -3,7 +3,9 @@
 }
 
 h1 {
+    font-weight: 700;
     font-size: 3rem;
+    font-family:"Inter", sans-serif;
 }
 
 h2 {
@@ -15,10 +17,13 @@ h2 {
 
 h3 {
     margin-top: 20px;
+    font-family:"Inter", sans-serif;
+    font-weight: 600;
 }
 
 p {
-    margin-top: 5px;
+    margin-top: 8px;
+    font-family:"Lora",serif;
 }
 
 header {
@@ -50,37 +55,41 @@ header nav button:hover {
 }
 
 main {
-    padding: 50px 10vw;
+    padding: 30px 5vw;
+    display: flex;
+    justify-content: center;
 }
 
 
 .column {
     display: flex;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
 }
 
 .left {
-    width: 60%;
+    flex: 1 1 60%;
+    max-width: 40rem;
 }
 
 .right {
-    margin-left: 5vw;
-    width:40%;
+    flex: 1 1 35%;
+    max-width: 25rem;
 }
 
-.right img {
-    width: minmax(80%, 10vw);
+.column h1 {
+    margin-top: 20px;
 }
 
-.betyg-column {
-    display:flex;
-    justify-content: flex-start;
-    width:100%;
+.p-div {
+    margin-top: 12px;
 }
 
-.betyg-column p:last-of-type {
-    width:100%;
-    color: red;
-    display: flex;
-    justify-content: flex-end;
+
+.column img {
+    margin-top: 20px;
+    border-radius: 1rem;
+    max-width:30vw;
+    min-width: 10rem;
 }
