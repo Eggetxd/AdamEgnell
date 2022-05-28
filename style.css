@@ -26,38 +26,77 @@ p {
     font-family:"Lora",serif;
 }
 
+a {
+    margin: 10px;
+    font-family:"Inter", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 header {
-    background-color: rgb(144, 144, 255);
-    padding: 10px 5vw;
-    padding-bottom: 0;
-}
-
-
-header nav{
+    background: rgb(213,255,233);
+    background: linear-gradient(18deg, rgba(213,255,233,1) 0%, rgba(184,255,240,1) 12%, rgba(139,230,235,1) 30%, rgba(54,150,247,1) 73%, rgba(25,100,218,1) 100%);
     display: flex;
-    align-content: flex-start;
-    margin-top: 10px;
+    align-items: center;
 }
+
+header h1 {
+    color: black;
+}
+
+header nav {
+    margin: 12px;
+}
+
 
 header nav button {
-    background-color: rgb(159, 159, 255);
-    padding: 0.5rem 1.5rem;
-    border-width: 2px;
-    border-color: rgb(144, 144, 226);
-    border-style:solid;
+    background: rgb(167,255,195);
+background: linear-gradient(18deg, rgba(167,255,195,1) 0%, rgba(155,250,231,1) 22%, rgba(118,238,255,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    padding: 0;
 }
 
 header nav button:hover {
-    background-color: rgb(129, 129, 238);
-    border-color: rgb(129, 129, 238);
-    border-bottom-color: white;
-    border-top-color: rgb(122, 122, 224);
+    background: rgb(167,255,193);
+    background: linear-gradient(18deg, rgba(167,255,193,1) 0%, rgba(143,211,223,1) 35%, rgba(118,164,255,1) 100%);
 }
 
+
+.dropDownContent {
+    display: none;
+    position: absolute;
+
+    background: rgb(221,255,232);
+    background: linear-gradient(90deg, rgba(221,255,232,1) 0%, rgba(184,255,240,1) 100%);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    z-index: 100;
+}
+
+.showDropDown {
+    display: grid;
+  }
+
+
 main {
-    padding: 30px 5vw;
+    padding: 0 5vw;
     display: flex;
     justify-content: center;
+    overflow:hidden;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -92,4 +131,15 @@ main {
     border-radius: 1rem;
     max-width:30vw;
     min-width: 10rem;
+}
+
+
+
+
+.banner img {
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    width: calc(100vw + 32px);
+    left: -16px;
+    top: -32px;
 }
